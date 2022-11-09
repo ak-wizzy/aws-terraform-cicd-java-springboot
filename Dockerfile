@@ -8,5 +8,5 @@ WORKDIR /app
 ARG JAR_FILE=/app/target/*.jar
 COPY --from=builder $JAR_FILE /app/app.jar
 
-EXPOSE 8080
+EXPOSE 8093
 CMD ["java", "-jar", "/app/app.jar"]

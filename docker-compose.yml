@@ -5,7 +5,7 @@ services:
     build: 
       context: .
       dockerfile: ./Dockerfile 
-    container_name: app
+    container_name: CAR_GARAGE_APP
     depends_on: 
       - db
     environment: 
@@ -17,7 +17,7 @@ services:
     networks: 
       - app 
     ports:
-      - 8080:8080
+      - 8080:8093
     volumes:
       - $HOME/.m2:/root/.m2
     restart: unless-stopped
