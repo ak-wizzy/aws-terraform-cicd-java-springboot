@@ -1,4 +1,5 @@
-FROM adoptopenjdk/maven-openjdk11 as builder
+#FROM 122939799774.dkr.ecr.eu-west-1.amazonaws.com/car-carrage as builder
+#FROM adoptopenjdk/maven-openjdk11 as builder
 WORKDIR /app
 COPY . /app 
 RUN mvn clean install 
